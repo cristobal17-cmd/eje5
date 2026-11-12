@@ -1,0 +1,19 @@
+cartelera = []
+
+for i in range(2):
+    print(f"\nPelícula {i + 1}:")
+    titulo = input("Título de la película: ")
+    duracion = int(input("Duración (minutos): "))
+    en_estreno = False
+    
+    pelicula = {
+        "titulo": titulo,
+        "duracion": duracion,
+        "en_estreno": en_estreno
+    }
+    
+    cartelera.append(pelicula)
+
+print("\n--- Lista completa de la cartelera ---")
+for p in cartelera:
+    print(p)
